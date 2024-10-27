@@ -4,10 +4,10 @@ import { RawData, WebSocket } from "ws";
 import { createServer, Server as HTTPServer } from "http";
 import cors from "cors";
 import { Retell } from "retell-sdk";
-import { CustomLlmRequest } from "./types";
+import { CustomLlmRequest } from "../types";
 import OpenAI from "openai";
-import { AppointmentSchedulingVoiceAgent } from "./llmClient/examples/AppointmentSchedulingVoiceAgent";
-import { sendWebSocketResponse } from "./utils";
+import { AppointmentSchedulingVoiceAgent } from "./agents/AppointmentSchedulingVoiceAgent";
+import { sendWebSocketResponse } from "../utils";
 
 export class VoiceAgentServer {
   public app: expressWs.Application;

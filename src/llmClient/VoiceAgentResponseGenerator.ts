@@ -8,7 +8,7 @@ import {
 import { AgentConversation } from "./VoiceAgentConversation";
 import { VoiceAgentConfiguration } from "./VoiceAgentConfiguration";
 import { WebSocket } from "ws";
-import { sendWebSocketResponse } from "../utils";
+import { sendWebSocketResponse } from "../examples/utils";
 
 export class VoiceAgentResponseGenerator {
   readonly client: OpenAI;
