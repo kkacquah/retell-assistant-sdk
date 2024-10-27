@@ -1,4 +1,4 @@
-import { CustomLlmResponse } from "../types";
+import { CustomLlmResponse } from "./types";
 import { WebSocket } from "ws";
 
 export const sendWebSocketResponse = (

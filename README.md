@@ -1,15 +1,31 @@
-# retell-custom-llm-node-demo
+# Retell assistant typescript SDK (Draft)
 
-This backend repo demonstrates how to start a WebSocket server that Retell server will connect to. Retell will send
-live transcripts and other updates to the server, and get responses from this server. see [API Docs](https://docs.retellai.com/guide/custom-llm-websocket) for walkthrough.
+This repository is a fork of [Retell's custom LLM integration demo](https://github.com/RetellAI/retell-custom-llm-example), extended to provide a more comprehensive typscript voice assistant SDK. The SDK is designed to support:
 
-The protocol of messages we send and expect to receive is documented [here](https://docs.retellai.com/api-references/llm-websocket).
+- Custom logging and analytics for voice interactions
+- Response moderation and filtering capabilities
+- Integration with prompt management services
+- A/B testing and prompt experimentation
+- Structured handling of tool calls and function execution
+- Flexible configuration of voice agent behaviors
 
-To set up inbound, make phone calls, see [API Docs](https://docs.retellai.com/guide/phone-setup) for a walkthrough.
+The example code demonstrates an appointment scheduling use case, but the SDK architecture allows for building various types of voice assistants with different capabilities and conversation flows.
 
-This repo contains `azure OpenAI`, `OpenAI`, and [`OpenRouter`](https://openrouter.ai), modify the import inside `src/server.ts` to switch between which one to use.
+## Configuration Options
 
-Check this [Youtube Tutorial](https://youtu.be/Tz969io9cPc?feature=shared&t=344) containing a walkthrough using the [Frontend Demo](https://github.com/adam-team/retell-frontend-reactjs-demo/tree/client_sdk) and this repo.
+The SDK allows customization of voice agents through several configuration options:
+
+### Voice Agent Configuration Options
+
+- `systemMessageSlug`: The system prompt that defines the agent's role and behavior
+- `beginSentence`: The initial greeting message the agent uses to start conversations
+- `availableTools`: The tool calls made available to the agent.
+- `chatCompletionOptions`: LLM-specific settings including:
+  - `temperature`: Controls response randomness (0-1)
+  - `max_tokens`: Maximum length of generated responses
+  - `frequency_penalty`: Reduces repetition in responses
+  - `presence_penalty`: Encourages topic diversity
+  - `model`: The LLM model to use (e.g. "gpt-4-turbo-preview")
 
 ## Steps to run locally to test
 

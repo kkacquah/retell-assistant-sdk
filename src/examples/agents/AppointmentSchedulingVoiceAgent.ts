@@ -1,10 +1,10 @@
 import { z } from "zod";
-import { VoiceAgentConfiguration } from "../../llmClient/VoiceAgentConfiguration";
-import { VoiceAgentResponseGenerator } from "../../llmClient/VoiceAgentResponseGenerator";
-import { VoiceAgent } from "../../llmClient/VoiceAgent";
+import { VoiceAgentConfiguration } from "../../voiceAgent/VoiceAgentConfiguration";
+import { VoiceAgentResponseGenerator } from "../../voiceAgent/VoiceAgentResponseGenerator";
+import { VoiceAgent } from "../../voiceAgent/VoiceAgent";
 import OpenAI from "openai";
 import { WebSocket } from "ws";
-import { AvailableTools } from "../../llmClient/types";
+import { AvailableTools } from "../../voiceAgent/types";
 
 const appointmentSchedulingParameters = z.object({
   time: z.string(),
