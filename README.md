@@ -1,6 +1,6 @@
 # Retell Assistant Typescript SDK (Draft)
 
-This repository is a fork of [Retell's custom LLM integration demo](https://github.com/RetellAI/retell-custom-llm-example), extended to provide a more comprehensive typscript voice assistant SDK. The SDK is designed to support:
+This repository is a fork of [Retell's custom LLM integration demo](https://github.com/RetellAI/retell-custom-llm-node-demo), extended to provide a more comprehensive typscript voice assistant SDK. The SDK is designed to support:
 
 - Custom logging and analytics for voice interactions
 - Response moderation and filtering capabilities
