@@ -9,7 +9,7 @@ This repository is a fork of [Retell's custom LLM integration demo](https://gith
 - Structured handling of tool calls and function execution
 - Flexible configuration of voice agent behaviors
 
-The example code demonstrates an appointment scheduling use case, but the SDK architecture allows for building various types of voice assistants with different capabilities and conversation flows.
+[The AppointmentSchedulingVoiceAgent code example](https://github.com/kkacquah/retell-assistant-sdk/blob/main/src/examples/agents/AppointmentSchedulingVoiceAgent.ts) demonstrates how one might use this for an appointment scheduling use case.
 
 ## Configuration Options
 
